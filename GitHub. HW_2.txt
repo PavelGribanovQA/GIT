@@ -1,0 +1,80 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- BagReports
+- SQL
+- Charles
+- MobileTesting
+
+git branch Postman
+git branch Jmeter
+git branch CheckLists
+git branch BagReports
+git branch SQL
+git branch Charles
+git branch MobileTesting
+
+2. Запушить все ветки на внешний репозиторий
+
+git push --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+
+git checkout BagReports
+$ cat >> BagReport.txt
+Severity: minor;
+Environment: Redmi 9t", Android 11;
+Title: The 'web-messenger' pop-up is not scrolled in landscape orientation on the 'How can we help you?' support page;
+Steps: 1. Navigate to 'website address',
+       2. Tap on the [Support] button,
+       3. Tap on the [Message] icon,
+       4. Tap on the [Web-messenger] button;
+Expected_Result: Pop-up 'Web-messenger' is scrolled;
+Actual_Result: Pop-up 'Web-messenger' is not scrolled;
+Attachment": video
+Ctrl + C
+
+4. Запушить структуру багрепорта на внешний репозиторий
+
+git add .
+git commit -m 'add BagReport.txt'
+git push origin BagReports
+
+5. Вмержить ветку Bag Reports в Main
+
+git checkout main
+git merge BagReports
+
+6. Запушить main на внешний репозиторий.
+
+git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+
+git checkout CheckLists
+$ cat >> CheckList.txt
+srtuktura
+check
+lista
+tut
+budet
+pozje
+ctrl+C
+
+8. Запушить структуру на внешний репозиторий
+
+git add .
+git commit -m 'add CheckList.txt'
+git push origin CheckLists
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+выполняется на интерфейсе гит хаба
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+
+git checkout main
+git fetch
+git pull
