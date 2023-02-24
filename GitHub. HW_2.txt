@@ -8,7 +8,7 @@ GitHub. HW_2
 - Charles
 - MobileTesting
 
-git branch Postman
+$git branch Postman
 git branch Jmeter
 git branch CheckLists
 git branch BagReports
